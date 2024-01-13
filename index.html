@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TravelFreaks</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" type="images/png" href="images/logo.ico">
+  <meta name="author" content="Anita Galović">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Početna stranica</a>
+      <a href="novosti.html">Novosti</a>
+      <a href="onama.html">O nama</a>
+      <a href="galerija.html">Galerija</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+
+  <section class="main-section">
+    <div class="content-container">
+      <div class="title">
+        <h1>TravelFreaks</h1>
+      </div>
+      <div class="subtitle">
+        <h2>Dobrodošli u našu čarobnu zajednicu putovanja!</h2>
+      </div>
+      <p class="description">Bez obzira jeste li iskusni putnik ili tek planirate svoje prvo putovanje, ovdje ćete pronaći izvor inspiracije, savjeta i nezaboravnih priča koje će vas motivirati da pakujete kofere i krenete na svoju vlastitu avanturu.</p>
+      <p class="description">Zajedno gradimo mostove između kultura, istražujemo nepoznato i stvaramo uspomene koje traju cijeli život. Nastojimo biti virtualna oaza istraživanja, gdje se dijele priče o fascinantnim destinacijama, jedinstvenim susretima s lokalnim stanovništvom te savjetima o putovanjima.</p>
+      <p class="description">Pridružite nam se u ovoj virtualnoj oazi istraživanja i otkrijte ljepotu svijeta kroz objektiv iskusnih putnika.</p>
+
+      <figure class="image-container">
+        <img src="images/Maldivi.png" alt="Maafushi">
+        <figcaption>Maafushi, Maldivi</figcaption>
+      </figure>
+
+      <div class="subscription">
+        <div class="input-container">
+          <input type="text" class="email-input" placeholder="Unesite E-mail addresu">
+          <label for="click" class="subscribe-btn" onclick="subscribe()">Pretplati se</label>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Copyright © Anita Galović
+      <a href="https://github.com/agalovic/WA2324-vjezbe" target="_blank" rel="noopener noreferrer">
+        <img src="images/GitHub.png" alt="GitHub"></a>
+    </p>
+  </footer>
+
+  <script>
+    function subscribe() {
+      var email = document.getElementsByClassName('email-input')[0].value;
+      if (email){
+        alert("Uspješno ste se pretplatili!\nBit ćete preusmjereni na stranicu O nama.");
+        window.location.href = "onama.html";
+      }
+      else
+      alert("Za pretplatu je potrebno unijeti email adresu!");
+      
+    }
+  </script>
+</body>
+
+</html>
